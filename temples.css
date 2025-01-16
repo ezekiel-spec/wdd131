@@ -1,0 +1,83 @@
+/* Mobile-first design */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    }
+    
+    header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    }
+    
+    header nav a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    }
+    
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    }
+    
+    figure {
+    margin: 0;
+    }
+    
+    img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* added max-width _/
+    margin: 10px; /_ added margin */
+    }
+    
+    figcaption {
+    font-size: 0.8em;
+    color: #666;
+    }
+    
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    }
+    
+    /* Media query for larger screens */
+    
+    @media (min-width: 768px) {
+    .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    
+    /* Styles for larger screens */
+    
+    @media (min-width: 1200px) { /* added media query for larger screens */
+    .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    }
+    }
