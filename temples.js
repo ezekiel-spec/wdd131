@@ -1,20 +1,17 @@
-// Get the current year
+// Get the current year for the copyright information.
+const copyrightYear = document.getElementById('copyright-year');
 const currentYear = new Date().getFullYear();
+copyrightYear.textContent = currentYear;
 
-// Get the last modified date
-const lastModifiedDate = new Date(document.lastModified);
+// Get the last modified date for the footer.
+const lastModifiedDate = document.getElementById('last-modified-date');
+const date = new Date(document.lastModified);
+lastModifiedDate.textContent = date.toLocaleString();
 
-// Format the last modified date
-const formattedLastModifiedDate = lastModifiedDate.toLocaleString();
+// Toggle the navigation menu on small screens.
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenu = document.getElementById('nav-menu');
 
-// Display the copyright year and the last modified date
-document.getElementById("copyright-year").textContent = currentYear;
-document.getElementById("last-modified-date").textContent = formattedLastModifiedDate;
-
-// Add event listener to the hamburger menu
-const hamburgerMenu = document.querySelector(".hamburger-menu");
-const navigationMenu = document.querySelector("nav ul");
-
-hamburgerMenu.addEventListener("click", () => {
-navigationMenu.classList.toggle("show");
+hamburgerMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('show');
 });

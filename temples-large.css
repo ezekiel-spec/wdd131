@@ -1,44 +1,19 @@
 /* Styles for larger screens */
 
-/* Layout adjustments */
-.gallery {
+@media (min-width: 1200px) {
+  .gallery {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
   }
   
-  figure {
-    margin: 0;
+  .hamburger-menu {
+    display: none;
   }
   
-  img {
-    width: 100%;
-    height: auto;
-  }
-  
-  figcaption {
-    font-size: 1em;
-    color: #666;
-  }
-  
-  /* Navigation menu adjustments */
   nav ul {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav a {
-    font-size: 1.2em;
-  }
-  
-  /* Additional styles */
-  main {
-    padding: 4em;
-  }
-  
-  footer {
-    padding: 2em;
-  }
+}
+
+
