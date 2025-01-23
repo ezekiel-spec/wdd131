@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    
+    <!-- Hero image section -->
+    <section class="hero">
+        <img srcset="images.profile\pexels-thisfolu.jpg,
+                     images/hero-medium.webp 800w,
+                     images/hero-large.webp 1200w"
+             sizes="(max-width: 400px) 400px,
+                    (max-width: 800px) 800px,
+                    1200px"
+             src="images.profile\pexels-david.jpg" alt="Hero image">
+    </section>
+    
+    <!-- Weather section -->
+    <section class="weather">
+        <h2>Weather</h2>
+        <p>Temperature: <span id="temperature">22°C</span></p>
+        <p>Wind speed: <span id="wind-speed">15 km/h</span></p>
+        <p>Wind chill: <span id="wind-chill"></span></p>
+    </section>
+    
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; <span id="year"></span> Nigeria</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+    
+    <script src="js/script.js" defer></script>
+</body>
+</html>

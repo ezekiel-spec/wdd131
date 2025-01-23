@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #4CAF50;
+    --background-color: #f7f7f7;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.hero {
+    background-color: var(--secondary-color);
+    padding: 2em;
+    text-align: center;
+}
+
+.weather {
+    padding: 2em;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin: 0;
+}
